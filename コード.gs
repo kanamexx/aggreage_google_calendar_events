@@ -94,7 +94,7 @@ function outputResult(aggregation, wholeDate, outputSheetname) {
   totalRow.push(finalTotal);
   sheet.appendRow(totalRow);
 
-  const detailHeader = ['Breakdown', ...sortedPrefixes.map(() => '---'), 'Total by day'];
+  const detailHeader = ['内訳', ...sortedPrefixes.map(() => '---'), 'Total by day'];
   sheet.appendRow(detailHeader);
 
   wholeDate.forEach(date => {
